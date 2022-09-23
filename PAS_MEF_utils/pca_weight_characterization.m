@@ -64,8 +64,9 @@ for i = 1:nImgs
     PCA_Weights(:,:,i) = imgaussfilt(PCA_Weights(:,:,i), 5);
 end
 
-PCA_Weights = PCA_Weights + 1e-12;
-PCA_Weights = PCA_Weights./repmat(sum(PCA_Weights,3),[1 1 nImgs]);
+PCA_Weights_norm = PCA_Weights + 1e-12;
+PCA_Weights_norm = PCA_Weights_norm./repmat(sum(PCA_Weights_norm,3),[1 1 nImgs]);
+
 
 end
 
