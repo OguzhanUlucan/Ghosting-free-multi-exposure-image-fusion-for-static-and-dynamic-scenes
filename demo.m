@@ -68,7 +68,7 @@ img_seq_lum = rgb2lum(I);
 expose = adaptive_expose_sigma(img_seq_lum);
 sal = saliency_weights(I);
 PCA = pca_weight_characterization(I);
-[fused,~] = new_method_fusion(PCA,expose,sal,I);
+[fused,~] = PAS_fusion(PCA,expose,sal,I);
 
 %% Metrics
 S_NiqeI = niqe(fused)
