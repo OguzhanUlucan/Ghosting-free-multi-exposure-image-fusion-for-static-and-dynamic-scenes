@@ -48,11 +48,13 @@ for i = 1:nImgs
     I = rgb2gray(imgs(:,:,:,i));
     x{i} = double(I(:));
 end
-   X = cellfun(@(x) reshape(x,[],1), x,'un',0);
-   X = padcat(X{:});
-   X1 = X(1,:);
+   y = zeros(row .* col, nImgs);
+   
+for l = 1 : nImgs
+    y(:,l) = x{1,l};
+end
     
-[~,Weights] = pca(X,'Algorithm','eig','Centered',false,'Rows','all');
+[~,Weights] = pca(y,'Algorithm','eig','Centered',false,'Rows','all');
 
 PCA_Weights = zeros(row,col,nImgs);
 for i = 1:nImgs
