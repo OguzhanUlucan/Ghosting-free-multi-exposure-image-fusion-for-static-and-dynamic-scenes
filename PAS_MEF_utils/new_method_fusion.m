@@ -38,7 +38,7 @@
 %
 %----------------------------------------------------------------------
 
-function [fused,w_all] = new_method_fusion(PCA,expose,sal,I)
+function [fused,w_all] = PAS_fusion(PCA,expose,sal,I)
 
 I = (I)/255;
 [~,~,~,num] = size(I);
