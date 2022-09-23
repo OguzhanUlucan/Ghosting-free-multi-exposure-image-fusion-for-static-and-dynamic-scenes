@@ -24,6 +24,19 @@
 % or implied warranty.
 %----------------------------------------------------------------------
 %
+% If you use this work, please cite as follows;
+%
+% @article{ulucan2022ghosting,
+%  title={Ghosting-Free Multi-Exposure Image Fusion for Static and Dynamic Scenes},
+%  author={Ulucan, Oguzhan and Ulucan, Diclehan and Turkan, Mehmet},
+%  journal={Signal Processing},
+%  pages={108774},
+%  year={2022},
+%  publisher={Elsevier}
+% }
+%
+%----------------------------------------------------------------------
+%
 % This work uses several packages provided by different authors;
 %
 % Pyramidal -> https://mericam.github.io/exposure_fusion/index.html
@@ -33,10 +46,7 @@
 % signatureSal -> "Image Signature: Highlighting sparse salient regions", 
 % Xiaodi Hou, Jonathan Harel, and Christof Koch,
 % IEEE Trans. Pattern Anal. Mach. Intell. 34(1): 194-201 (2012)
-%
-% MEF-SSIM -> "Perceptual Quality Assessment for Multi-Exposure
-% Image Fusion",K. Ma et al., 
-% IEEE Transactions on Image Processing.
+
 
 clear all, close all, clc
 addpath('Pyramidal');
@@ -59,7 +69,6 @@ PCA = pca_weight_characterization(I);
 [fused,~] = new_method_fusion(PCA,expose,sal,I);
 
 %% Metrics
-SSIM = SSIMscore(I, fused)
 S_NiqeI = niqe(fused)
 S_BrisqueI = brisque(fused) 
 S_PiqeI = piqe(fused)
