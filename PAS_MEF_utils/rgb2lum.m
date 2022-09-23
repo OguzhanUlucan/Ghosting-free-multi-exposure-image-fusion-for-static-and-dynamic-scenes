@@ -39,7 +39,7 @@
 %----------------------------------------------------------------------
 
 function img_seq_lum = rgb2lum(img_seq)
-        [~,~,~,num] = size(img_seq);
+        [row,col,~,num] = size(img_seq);
         img_seq = uint8(img_seq);
         img_seq_lum = zeros(row,col,num);
 
