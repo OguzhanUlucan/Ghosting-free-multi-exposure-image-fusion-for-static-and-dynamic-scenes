@@ -1,4 +1,4 @@
-%% PCA Score Extraction
+%% PCA Weights
 % Oguzhan Ulucan & Diclehan Ulucan, M.Sc.
 % ========================================================================
 %
