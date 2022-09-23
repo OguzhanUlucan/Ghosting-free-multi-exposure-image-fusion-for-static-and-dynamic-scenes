@@ -1,3 +1,5 @@
+% Oguzhan Ulucan & Diclehan Ulucan, M.Sc.
+
 clear all, close all, clc
 addpath('Pyramidal');
 addpath('PAS_MEF_utils');
