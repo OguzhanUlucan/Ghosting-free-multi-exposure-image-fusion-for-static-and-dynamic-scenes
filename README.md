@@ -19,7 +19,6 @@ If you find this work useful in your research, please cite it as follows;
   year={2022},
   publisher={Elsevier}
  }
-
 ```
 
 *   Ulucan, O., Ulucan, D., & Turkan, M. (2022). Ghosting-Free Multi-Exposure Image Fusion for Static and Dynamic Scenes. Signal Processing, 108774.
