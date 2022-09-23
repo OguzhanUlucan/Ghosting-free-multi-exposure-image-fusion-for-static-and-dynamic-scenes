@@ -46,7 +46,9 @@
 % signatureSal -> "Image Signature: Highlighting sparse salient regions", 
 % Xiaodi Hou, Jonathan Harel, and Christof Koch,
 % IEEE Trans. Pattern Anal. Mach. Intell. 34(1): 194-201 (2012)
-
+%
+% Please contact me if you see any bugs or 
+% have any ideas to improve the code.
 
 clear all, close all, clc
 addpath('Pyramidal');
